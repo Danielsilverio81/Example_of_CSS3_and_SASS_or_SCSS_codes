@@ -1,2 +1,2 @@
-# Tutorial property CSS3
+# example codes for css3 properties
  In this repository you will see a mini tutorial designed to specify and display each property in css3 on screen
