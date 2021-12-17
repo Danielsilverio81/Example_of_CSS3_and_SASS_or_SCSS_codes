@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width_seletor</title>
+    <style type="text/css">
+        /*plus you learn the width and its specifics like pixel, percentage, vw, and the auto value. you also have an example of how to select direct children of an element.
+        to set a property for every class that starts with width*/
+        /*width does not take into account other box model properties such as padding, border and margin*/
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .fundo {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .fundo > div[class^=largura] {
+            border-style: solid;
+            border-width: 3px;
+            margin-bottom: 3%;
+            height: 65px;
+        }
+
+        .largura-auto {
+            width: auto;
+            border-color: rgb(44, 44, 184);
+        }
+
+        
+        .largura-vwvh {
+            width: 50vw;
+            border-color: rgb(194, 159, 4);
+        }
+
+        .largura-percent {
+            width: 60%;
+            border-color: rgb(4, 194, 52);
+        }
+
+        .largura-pixel {
+            width: 600px;
+            border-color: rgb(194, 4, 169);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="fundo">
+
+        <div class="largura-auto"><p>Auto: Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo dolorum fugit, voluptate aspernatur delectus non blanditiis aliquam! Unde, dolor fugit voluptatibus error pariatur ipsa veritatis officia sint veniam quia.</p></div>
+
+        <div class="largura-vwvh"><p>Vwvh: Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo dolorum fugit, voluptate aspernatur delectus non blanditiis aliquam! Unde, dolor fugit voluptatibus error pariatur ipsa veritatis officia sint veniam quia.</p></div>
+
+        <div class="largura-percent"><p>percent: Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo dolorum fugit, voluptate aspernatur delectus non blanditiis aliquam! Unde, dolor fugit voluptatibus error pariatur ipsa veritatis officia sint veniam quia.</p></div>
+
+        <div class="largura-pixel"><p>pixel: Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo dolorum fugit, voluptate aspernatur delectus non blanditiis aliquam! Unde, dolor fugit voluptatibus error pariatur ipsa veritatis officia sint veniam quia.</p></div>    
+    </div>
+    </body>
+</html>
