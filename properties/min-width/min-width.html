@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min-width</title>
+    <style type="text/css">
+        /*defined minimum width, the minimum width that the element will reach if the screen is reduced. copy the code, reduce the screen by activating the dev tools with f12 and see that it will stop the content, in the defined minimum width and will overflow the rest of the content*/
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 30%;
+            height: 15vh;
+            background-color: cadetblue;
+            border: solid 3px red;
+        }
+
+        .item {
+            min-width: 200px;
+            width: auto;
+            height: 11vh;
+            background-color: burlywood;
+            box-shadow: 0 0 cornflowerblue;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item"><p>min-width: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, tempora sequi esse labore, sapiente possimus non beatae fuga dolores sunt ut voluptate harum et voluptatem ab numquam perferendis assumenda rem!</p></div>
+        </div>
+    </body>
+</html>
