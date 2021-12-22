@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin-left</title>
+    <style type="text/css">
+        /*margin-lef, is used to give an external left spacing, see that in this code we use a child selector, first child to unmark the margin-left, only the first square, besides we also use the value of 20vw, in heigth not strange, this is so that we can specify the height value the same value as the square has the width*/
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .bloco {
+            background-color: darkred;
+            height: 20vw;
+            width: 20vw;
+            margin-left: 15px;
+        }
+        .bloco:first-child {
+            margin-left: unset;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+    </body>
+</html>
