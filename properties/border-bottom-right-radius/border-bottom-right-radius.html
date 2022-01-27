@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-bottom-right-radius</title>
+    <style type="text/css">
+        /*border-bottom-right-radius, creates a rounded border at the base of the right corner of the element...
+        obs: we used some properties from the previous example*/
+          body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            margin-top: 4%;
+            width: 400px;
+            height: 400px;
+            background-color: #DAA520;
+            border: dashed 10px #fff;
+            border-bottom-right-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card > div {
+            width: 200px;
+            height: 200px;
+            background-color: #D02090;
+            border-bottom-right-radius: inherit;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="card">
+            <div></div>
+        </div>
+    </body>
+</html>
