@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-spacing</title>
+    <style type="text/css">
+       /*border-spacing, and used to set the spacing of cells in a table.*/
+
+         * {box-sizing: border-box; margin: 0; padding: 0;}
+
+body {
+    background-color: #4169E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 1.2em;
+}
+
+table {
+    border: solid 3px black;
+    padding: 5px;
+    border-spacing:10px;
+}
+
+th,td {
+    color: #ffff;
+    border: solid 2px black;
+    padding: 6px;
+}
+    </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>555555</td>
+                        <td>hgyff@hgghh</td>
+                        <td>Dev Web</td>
+                    </tr>
+                    <tr>
+                        <td>Alissom</td>
+                        <td>31987555</td>
+                        <td>fddrdd@fffdt</td>
+                        <td>Analista</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel</td>
+                        <td>55565566</td>
+                        <td>ftffyg@hvgvv</td>
+                        <td>Dev Backend</td>
+                    </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
