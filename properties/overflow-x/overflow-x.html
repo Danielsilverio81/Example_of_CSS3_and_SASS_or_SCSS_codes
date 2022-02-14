@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-x</title>
+    <style type="text/css">
+        /*overflow-x, this property serves to hide the content that overflows from the container, 
+        on the x axis, in this example we use the scroll property that creates an scroll to display the elements inside the container
+         and not allow them to overflow*/
+         
+        body { 
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+      .series-favoritas {
+          width: 300px;
+          display: flex;
+          height: 200px;
+          border: black 5px solid;
+          overflow-x: scroll;
+      }
+      
+      .item {
+          padding: 50px;
+          margin-right: 20px;
+          border: #ff760c 5px outset;
+      }
+    </style>
+    </head>
+    <body>
+        <div class="series-favoritas">
+            <div class="item">Peaky-bliders</div>
+            <div class="item">Flash</div>
+            <div class="item">Demolidor</div>
+            <div class="item">Perdidos no espaço</div>
+            <div class="item">La casa de Papel</div>
+        </div>
+    </body>
+</html>
