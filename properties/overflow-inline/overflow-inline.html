@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>overflow-inline</title>
     <style type="text/css">
-        
+        /*overflow-inline, property used to create word-break scroll in content. This property is unique to firefox and should not be used on legacy system*/
+        .container {
+            width: 200px;
+            border: black 1px solid;
+            overflow-inline: auto;
+        }
     </style>
     </head>
     <body>
-        
+        <div class="container">
+            consectetur adipisicingadipisicingadipisicingadipisicingadipisicing 
+        </div>
     </body>
 </html>
