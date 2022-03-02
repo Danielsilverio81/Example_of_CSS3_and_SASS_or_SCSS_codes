@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resize</title>
+    <style type="text/css">
+    /*resize, allows user to control element sizing, and this day most properties work better in firefox,*/
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            width: 50vw;
+        }
+
+        .item {
+            resize: both;
+            overflow: auto;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="content">
+            <p class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, sint velit adipisci consequuntur blanditiis esse provident ut, asperiores, ad dolores vero porro libero sit omnis exercitationem. Iure quaerat dolorem fuga.     
+            </p>
+            <p class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ea facilis cum quas autem. Harum et dolores, tempore excepturi neque nobis, ex natus velit tenetur pariatur minima laboriosam placeat nulla.
+            </p>
+        </div>
+        <form>
+            <textarea>
+
+            </textarea>
+        </form>
+    </body>
+</html>
