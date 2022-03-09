@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            margin-top: 30px;
+            max-width: 50vw;
+        }
+
+        h2 {
+            font-family: 'segue UI';
+            color: orange;
+        }
+
+        .block {
+        display: block;
+        text-transform: uppercase;
+        }
+
+        .inline {
+            display: inline;
+            text-transform: uppercase;
+        }
+
+        .inline-block {
+            display: inline-block;
+            text-transform: uppercase;
+            width: 150px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Display: Block</h2>
+
+            <div class="block">
+                Properties
+            </div>
+            <span class="block">Properties</span>
+            <span class="block">Properties</span>
+            <span class="block">Properties</span>
+        </div>
+        <div class="container">
+            <h2>Display: Inline</h2>
+
+            <div class="inline">
+                Properties
+            </div>
+            <span class="inline">Properties</span>
+            <span class="inline">Properties</span>
+            <span class="inline">Properties</span>
+        </div>
+        <div class="container">
+            <h2>Display: Inline-block</h2>
+
+            <div class="inline-block">
+                Properties
+            </div>
+            <span class="inline-block">Properties</span>
+            <span class="inline-block">Properties</span>
+            <span class="inline-block">Properties</span>
+        </div>
+        
+    </body>
+</html>
