@@ -12,7 +12,7 @@
         }
 
         .container {
-            margin-top: 30px;
+            margin-top: 20px;
             max-width: 50vw;
         }
 
@@ -22,19 +22,55 @@
         }
 
         .block {
+            /*makes it form blocks, one under the other...*/
         display: block;
         text-transform: uppercase;
         }
 
         .inline {
+            /*inline, does not accept changing the width*/
             display: inline;
             text-transform: uppercase;
         }
 
         .inline-block {
+            /*union of block and inline quality, accepts to change the height and width and puts the content in line*/
             display: inline-block;
             text-transform: uppercase;
-            width: 150px;
+            width: 99px;
+        }
+
+        .contents {
+            /*does not accept background, and is suitable for content that does not need much styling*/
+            background-color: gray;
+            display: contents;
+        }
+
+        .flex {
+            /*flex, makes the elements flexible, in addition to automatically placing them next to each other...*/
+            display: flex;
+        }
+
+        .inline-flex {
+            /*like inline-block, this property inlines elements, but this time makes them flexible as well*/
+            display: inline-flex;
+        }
+
+        .grid {
+            /*grid, place elements in columns*/
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        .inline-grid {
+            /*different from the grid, when the two elements like the two calculators in the example, with inline-grid, the elements are placed in a line next to each other...*/
+            display:inline-grid;
+            grid-template-columns: repeat(4, 70px);
+        }
+
+        .list-item {
+            /*list-item makes any element an item in a list*/
+            display: list-item;
         }
     </style>
     </head>
@@ -69,6 +105,122 @@
             <span class="inline-block">Properties</span>
             <span class="inline-block">Properties</span>
         </div>
-        
+        <div class="container">
+            <h2>Display: Contents</h2>
+
+            <div class="contents">
+                Properties
+            </div>
+            <span class="inline-contents">Properties</span>
+            <span class="inline-contents">Properties</span>
+            <span class="inline-contents">Properties</span>
+        </div>
+        <div class="container">
+            <h2>Display: flex</h2>
+
+            <div class="flex">
+                Properties
+            </div>
+            <span class="flex">Properties</span>
+            <span class="flex">Properties</span>
+            <span class="flex">Properties</span>
+        </div>
+        <div class="container">
+            <h2>Display: inline-flex</h2>
+
+            <div class="inline-flex">
+                Properties
+            </div>
+            <span class="inline-flex">Properties</span>
+            <span class="inline-flex">Properties</span>
+            <span class="inline-flex">Properties</span>
+        </div>
+        <div class="container">
+            <h2>Display: grid</h2>
+
+            <div class="grid">
+                <div>AC</div>
+                <div>CE</div>
+                <div>%</div>
+                <div>/</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>X</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>0</div>
+                <div>.</div>
+                <div>,</div>
+                <div>=</div>
+            </div>
+        <div class="container">
+            <h2>Display: inline-grid</h2>
+
+            <div class="inline-grid">
+                <div>AC</div>
+                <div>CE</div>
+                <div>%</div>
+                <div>/</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>X</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>0</div>
+                <div>.</div>
+                <div>,</div>
+                <div>=</div>
+            </div>
+            <div class="inline-grid">
+                    <div>AC</div>
+                    <div>CE</div>
+                    <div>%</div>
+                    <div>/</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>X</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>-</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>+</div>
+                    <div>0</div>
+                    <div>.</div>
+                    <div>,</div>
+                    <div>=</div>
+            </div>
+    </div>
+    <div class="container">
+        <h2>Display: list-item</h2>
+
+          <ul>
+             <li>item 1</li>
+             <li>item 2</li>
+             <li>item 3</li>
+          </ul>
+          <div>
+              <span class="list-item">item a</span>
+              <span class="list-item">item b</span>
+              <span class="list-item">item c</span>
+          </div>
+    </div>
     </body>
 </html>
