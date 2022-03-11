@@ -72,6 +72,32 @@
             /*list-item makes any element an item in a list*/
             display: list-item;
         }
+/*display table, leaves elements in table form according to the specified property.*/
+        .tabela {
+            display: table;
+        }
+
+        .linha {
+            display: table-row;
+        }
+
+        .celula {
+            display: table-cell;
+        }
+
+        .cabecalho .celula {
+            font-weight: bold;
+            text-align: center;
+            width: 100px;
+        }
+
+        .none {
+            /*display none, hide the element*/
+            display: none;
+            background-color: olivedrab;
+            height: 100px;
+            width: 100px;
+        }
     </style>
     </head>
     <body>
@@ -135,7 +161,7 @@
             <span class="inline-flex">Properties</span>
             <span class="inline-flex">Properties</span>
         </div>
-        <div class="container">
+        <d class="container">
             <h2>Display: grid</h2>
 
             <div class="grid">
@@ -222,5 +248,61 @@
               <span class="list-item">item c</span>
           </div>
     </div>
+    <div class="container">
+        <h2>Display: table</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>joão</td>
+                    <td>Danielsilverio81@gmail.com</td>
+                    <td>99</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>1-Nome</td>
+                    <td>1-E-mail</td>
+                    <td>99</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+        <div class="container">
+            <h2>Display:table starter</h2>
+            <div>
+                <div class="cabecalho">
+                    <div class="linha">
+                        <div class="celula">Nome</div>
+                        <div class="celula">E-mail</div>
+                        <div class="celula">Idade</div>
+                    </div>
+                </div>
+                <div class="tabela">
+                    <div class="linha">
+                        <div class="celula">João</div>
+                        <div class="celula">Danielsilverio81@gmail.com</div>
+                        <div class="celula">100</div>
+                    </div>
+                    <div class="linha">
+                        <div class="celula">1-Nome</div>
+                        <div class="celula">1-E-mail</div>
+                        <div class="celula">100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Display:None</h2>
+
+            <div class="none"></div>
+        </div>
     </body>
 </html>
