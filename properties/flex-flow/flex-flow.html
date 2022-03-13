@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hcode.com.br</title>
+    <style type="text/css">
+        /*flex-flow, this property is short for the properties, flex-direction and flex-wrap. It is used when you want to 
+        specify the direction and the line break or not.*/
+         * {margin: 0; padding: 0; box-sizing: border-box;}
+        
+         h1 {
+             margin: 15px 30px;
+             text-transform: uppercase;
+             color: darkblue;
+         }
+        .card {
+           margin: 10px 15px;
+           display: flex;
+           flex-flow:column wrap;
+           gap: 5px;
+           width: 80%;
+           height: 90vh;
+       } 
+
+       .card > div {
+           margin: 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 150px;
+           height: 150px;
+           border: 2px solid orangered;
+           box-shadow: 3px 5px 5px gray ;
+       }
+    </style>
+    </head>
+    <body>
+        <section>
+            <h1>Flex-flow</h1>
+
+            <div class="card">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+                <div class="e">E</div>
+                <div class="f">F</div>
+                <div class="g">G</div>
+                <div class="h">H</div>
+                <div class="i">I</div>
+                <div class="j">J</div>
+                <div class="k">K</div>
+                <div class="l">L</div>
+            </div>
+        </section>
+    </body>
+</html>
