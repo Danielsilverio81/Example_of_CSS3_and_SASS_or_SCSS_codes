@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style type="text/css">
+        /*Justify-content, sets the alignments or spacing of flexible items on the main axis.*/
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        
+        h1 {
+            margin: 15px 30px;
+            text-transform: uppercase;
+            color: darkblue;
+        }
+       .card {
+          margin: 10px 15px;
+          display: flex;
+          flex-flow:row wrap;
+          justify-content: space-between;
+          gap: 5px;
+          width: 80%;
+          height: 90vh;
+      } 
+
+      .card > div {
+          color: white;
+          background-color: blue;
+          margin: 10px;
+          display: flex;
+          width: 100px;
+          height: 100px;
+          border: 2px solid orangered;
+          box-shadow: 3px 5px 5px gray ;
+      }
+        
+    </style>
+    </head>
+    <body>
+        <section>
+            <h1>Justify-content</h1>
+
+            <div class="card">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+            </div>
+        </section>
