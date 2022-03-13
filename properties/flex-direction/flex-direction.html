@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-dirction</title>
+    <style type="text/css">
+        * {padding: 0; margin:0; box-sizing: border-box;}
+
+        h2 {
+            margin-left: 30px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       .card {
+           /*flex-direction:row, this property is the default value of flex direction, where elements are in line*/
+           margin: 25px 20px;
+           padding: 8px;
+           display: flex;
+           flex-direction: row;
+           gap: 10px;
+           width: 80%;
+           height: 25vh;
+           border: 2px solid gray;
+           box-shadow: 4px 4px 5px black;
+       } 
+
+       .card > div {
+           width: 150px;
+           height: 150px;
+           border: 2px solid orangered;
+       }
+
+       .card2 {    
+           /*flex-direction:row-reverse, this property is the in-line value, only it is used to reverse the display order of elements.*/
+           margin: 25px 20px;
+           padding: 8px;
+           display: flex;
+           flex-direction: row-reverse;
+           gap: 10px;
+           width: 80%;
+           height: 25vh;
+           border: 2px solid gray;
+           box-shadow: 4px 4px 5px black;
+       } 
+
+       .card2 > div {
+           width: 150px;
+           height: 150px;
+           border: 2px solid orangered;
+       }
+
+       .card3 {
+           /*flex-direction:column, this property takes the elements from the row and passes the elements to the column.*/
+           margin: 25px 20px;
+           padding: 5px;
+           display: flex;
+           flex-direction: column;
+           gap: 5px;
+           width: 22%;
+           height: 25vh;
+           border: 2px solid gray;
+           box-shadow: 4px 4px 5px black;
+       } 
+
+       .card3 > div {
+           width: 150px;
+           height: 150px;
+           border: 2px solid orangered;
+       }
+
+       .card4 {
+           /*flex-direction:column-reverse, this property takes the elements from the row and passes the elements to the column, but it presents the elements in the sequence in reverse.*/
+           margin: 25px 20px;
+           padding: 5px;
+           display: flex;
+           flex-direction: column-reverse;
+           gap: 5px;
+           width: 22%;
+           height: 25vh;
+           border: 2px solid gray;
+           box-shadow: 4px 4px 5px black;
+       } 
+
+       .card4 > div {
+           width: 150px;
+           height: 150px;
+           border: 2px solid orangered;
+       }
+    </style>
+    </head>
+    <body>
+        <section>
+            <h2>Card 1</h2>
+            <div class="card">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+            </div>
+        </section>
+        <section>
+            <h2>Card 2</h2>
+            <div class="card2">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+            </div>
+        </section>
+        <section>
+            <h2>Card 3</h2>
+            <div class="card3">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+            </div>
+        </section>
+        <section>
+            <h2>Card 4</h2>
+            <div class="card4">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+            </div>
+        </section>
+    </body>
+</html>
