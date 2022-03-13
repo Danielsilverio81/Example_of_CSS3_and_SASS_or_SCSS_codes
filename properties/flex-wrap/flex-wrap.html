@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap</title>
+    <style type="text/css">
+/*flex-wrap, this property creates line wrap for the container in case the inner elements are not fitting in the sizing.*/
+
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        
+        .card {
+           margin: 10px 15px;
+           display: flex;
+           flex-wrap: wrap;
+           gap: 5px;
+           width: 90%;
+           height: 73vh;
+           border: 2px solid black;
+           box-shadow: 4px 4px 5px black;
+       } 
+
+       .card > div {
+           margin: 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 200px;
+           height: 200px;
+           border: 2px solid orangered;
+       }
+    </style>
+    </head>
+    <body>
+         <div class="card">
+                <div class="a">A</div>
+                <div class="b">B</div>
+                <div class="c">C</div>
+                <div class="d">D</div>
+                <div class="e">E</div>
+                <div class="f">F</div>
+                <div class="g">G</div>
+                <div class="h">H</div>
+                <div class="i">I</div>
+                <div class="j">J</div>
+                <div class="k">K</div>
+                <div class="l">L</div>
+            </div>
+    </body>
+</html>
