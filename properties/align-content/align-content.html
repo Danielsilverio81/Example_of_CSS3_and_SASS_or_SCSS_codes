@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <style type="text/css">
+/*align-content, sets the shape of the flex-wrap property line wrapping*/
+
+            body {
+            margin: 0;
+        }
+
+        .container {
+            color: chartreuse;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container > div {
+            background: red;
+            height: 400px;
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </body>
+</html>
