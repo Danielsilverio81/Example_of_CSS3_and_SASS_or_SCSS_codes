@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex-shrink</title>
+    <title>flex</title>
     <style type="text/css">
-        /*flex-shrink, defines the compression ratio that flex items can undergo*/
-       body {
+        /*this is a shorthand property for flex-basis, flex-shrink and flex-grow*/
+        body {
             margin: 0;
             display: flex;
             height: 100vh;
@@ -30,9 +30,7 @@
             align-items: center;
             justify-content: center;
             transition: all .2s ease-in-out;
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 100px;
+            flex: 1 1 100px;
         }
 
         .container > div:hover {
@@ -42,7 +40,7 @@
         
         .container > div.a {
             flex-shrink: 3;
-        }  
+        }
     </style>
     </head>
     <body>
@@ -51,5 +49,6 @@
             <div class="b">b</div>
             <div class="c">c</div>
             <div class="d">d</div>
+    </body>
     </body>
 </html>
