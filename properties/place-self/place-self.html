@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-self</title>
+    <style type="text/css">
+        /*place-self, this property is short for the align-self and justify-self properties, used to adjust the place of elements in the display grid*/
+        body {
+            margin:0;
+            background-color: #eee;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            height: 100vh;
+        }
+
+        body > div {
+            background-color: #00ff0066;
+            border: green 2px solid;
+            width: 60px;
+            height: 60px;
+            place-self: start center;
+        }
+    </style>
+    </head>
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </body>
+</html>
