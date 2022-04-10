@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <style type="text/css">
+        /*align-self, overrides the align-items property, in this example we only modify the position of div 2 in relation to the other elements using align-items.*/
+        body {
+             margin: 0;
+             padding: 0;
+             background-color: #ccc;
+             display: flex;
+             justify-content: flex-start;
+             align-items: flex-start;
+             height: 100vh;
+             width: 100vw;
+        }
+
+         body > div {
+             width: 100px;
+             height: 100px;
+             background-color: #ff000066;
+             border: red 1px solid;
+         }
+         body > div:nth-child(2) {
+             margin-bottom:40vh;
+             align-self: flex-end;
+         }
+    </style>
+    </head>
+    <body>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </body>
+</html>
