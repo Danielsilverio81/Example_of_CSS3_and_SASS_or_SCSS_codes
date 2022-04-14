@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachment</title>
+    <style type="text/css">
+        /*background-attachment, lets you decide whether the background image will scroll or stick on the screen*/
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .full-banner {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(image/xps-1.jpg);
+            background-size: cover;
+        }
+
+        section.xps-detail {
+            height: 800px;
+            background-image: url(image/xps-2.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+            background-attachment: fixed;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="full-banner"></div>
+        <section class="xps-detail"></section>
+    </body>
+</html>
