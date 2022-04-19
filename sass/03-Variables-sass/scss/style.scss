@@ -1,0 +1,29 @@
+$laranja-vari: #ff760c;
+$sectionback: #FFFAF0;
+$background: #00868B;
+* {
+    margin: 0; 
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: $laranja-vari;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color:$background ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        color: white;
+    }
+}
+main {
+    font-size: 20px;
+    section {
+        height: calc(100vh - 150px);
+        background: $sectionback;
+    }
+}
