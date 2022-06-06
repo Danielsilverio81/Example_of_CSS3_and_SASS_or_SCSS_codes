@@ -5,6 +5,7 @@ $color:#5F9EA0;
 }
 
 body {
+    background-color: #DCDCDC;
     $color-first: black;/*Variables escopo shadowing*/
     margin:0;
     font-family: sans-serif;
@@ -17,12 +18,12 @@ body {
     margin: 20px;
     padding: 0;
     li {
-        $background-color: #f5f6fa;
+        $background-color: #B0C4DE;
         background-color: $color;
         display: flex;
         margin-bottom: 32px;
         .avatar {
-            padding: 0 16px;
+            padding: 5px 16px;
             display: flex;
             align-items: flex-end;
             img {
@@ -37,7 +38,7 @@ body {
             border-radius: 8px;
             border-bottom-left-radius: 0;
             strong {
-                color: #242939;
+                color: black;
             }
             p {
                 font-size: 14px;
@@ -63,11 +64,13 @@ body {
             }
         }
         &.me {
-            background-color: $color;
+            background-color:$background-color;
             flex-direction: row-reverse; 
-        }
-        .message {
-            
+            .message{
+                strong {
+                    display: none;
+                }
+            }
         }
     }
 }
