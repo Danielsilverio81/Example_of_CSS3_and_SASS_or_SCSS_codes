@@ -1,4 +1,4 @@
-/*@forward allows you to organize the imports even more by uniting all @use imports in a single folder and then calling them in style*/
+/*with the @function style rule, we can create functions to define color change or other elements, using calculations and logic.*/
 * {
   box-sizing: border-box;
 }
