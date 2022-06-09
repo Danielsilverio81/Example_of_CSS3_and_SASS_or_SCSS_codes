@@ -1,0 +1,85 @@
+/*@forward allows you to organize the imports even more by uniting all @use imports in a single folder and then calling them in style*/
+@use "propertymain" with(
+    $color: #FDF5E6
+);
+
+@use "mycolor";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DCDCDC;
+    margin:0;
+    font-family: sans-serif;
+}
+
+#chat {
+    border: propertymain.$color-first 2px solid;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0;
+    li {
+        $background-color: #2E8B57;
+        background-color: propertymain.$color;
+        display: flex;
+        margin-bottom: 32px;
+        .avatar {
+            padding: 5px 16px;
+            display: flex;
+            align-items: flex-end;
+            img {
+                @include propertymain.circle;
+                width: 47px;
+            }
+        }
+        .message {
+            background-color: mycolor.invert(propertymain.$color);
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+            border-bottom-left-radius: 0;
+            color: propertymain.$color-font;
+            strong {
+                color: propertymain.$color-font;
+            }
+            p {
+                font-size: 14px;
+            }
+            time {
+                font-size: 12px;
+                letter-spacing: 1px;
+                opacity: .65;
+            }
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            button {
+                border: none;
+                background: none;
+                outline: none;
+                img {
+                    width: 16px;
+                    opacity: .5;
+                    cursor: pointer;
+                }
+            }
+        }
+        &.me {
+            background-color:propertymain.$color;
+            flex-direction: row-reverse; 
+            .message{
+                background-color:green;
+                border-bottom-left-radius:propertymain.$radius ;
+                border-bottom-right-radius: 0;
+               color: #fff;
+                strong {
+                    display: none;
+                }
+            }
+        }
+    }
+}

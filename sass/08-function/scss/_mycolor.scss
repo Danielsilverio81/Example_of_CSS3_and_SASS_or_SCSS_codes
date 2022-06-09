@@ -1,0 +1,6 @@
+@use "sass:color";
+
+@function invert($color, $amount: 96%){
+    $inverse: color.change($color, $hue: color.hue($color) + 230);
+    @return color.mix($inverse, $color, $amount);
+}
