@@ -1,39 +1,47 @@
-/*This is source code nesting in css where one element is declared inside another in css*/
+/*@forward allows you to organize the imports even more by uniting all @use imports in a single folder and then calling them in style*/
+@use "propertymain" with(
+    $color: #FDF5E6
+);
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    background-color: #DCDCDC;
     margin:0;
     font-family: sans-serif;
-    color: #7f808c;
 }
 
 #chat {
+    border: propertymain.$color-first 2px solid;
     display: flex;
     flex-direction: column;
     margin: 20px;
     padding: 0;
     li {
+        $background-color: #2E8B57;
+        background-color: propertymain.$color;
         display: flex;
         margin-bottom: 32px;
         .avatar {
-            padding: 0 16px;
+            padding: 5px 16px;
             display: flex;
             align-items: flex-end;
             img {
-                border-radius: 50%;
+                @include propertymain.circle;
                 width: 47px;
             }
         }
         .message {
+            background-color: $background-color;
             flex: 1;
-            background-color: #f5f6fa;
-            padding: 16px;
+            padding: 20px;
             border-radius: 8px;
             border-bottom-left-radius: 0;
+            color: propertymain.$color-font;
             strong {
-                color: #242939;
+                color: propertymain.$color-font;
             }
             p {
                 font-size: 14px;
@@ -55,6 +63,19 @@ body {
                     width: 16px;
                     opacity: .5;
                     cursor: pointer;
+                }
+            }
+        }
+        &.me {
+            background-color:propertymain.$color;
+            flex-direction: row-reverse; 
+            .message{
+                background-color:green;
+                border-bottom-left-radius:propertymain.$radius ;
+                border-bottom-right-radius: 0;
+               color: #fff;
+                strong {
+                    display: none;
                 }
             }
         }

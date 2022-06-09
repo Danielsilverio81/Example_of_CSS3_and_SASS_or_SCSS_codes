@@ -1,26 +1,28 @@
-/*This is source code nesting in css where one element is declared inside another in css*/
+/*@forward allows you to organize the imports even more by uniting all @use imports in a single folder and then calling them in style*/
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-color: #DCDCDC;
   margin: 0;
   font-family: sans-serif;
-  color: #7f808c;
 }
 
 #chat {
+  border: red 2px solid;
   display: flex;
   flex-direction: column;
   margin: 20px;
   padding: 0;
 }
 #chat li {
+  background-color: #FDF5E6;
   display: flex;
   margin-bottom: 32px;
 }
 #chat li .avatar {
-  padding: 0 16px;
+  padding: 5px 16px;
   display: flex;
   align-items: flex-end;
 }
@@ -29,14 +31,15 @@ body {
   width: 47px;
 }
 #chat li .message {
+  background-color: #2E8B57;
   flex: 1;
-  background-color: #f5f6fa;
-  padding: 16px;
+  padding: 20px;
   border-radius: 8px;
   border-bottom-left-radius: 0;
+  color: #fafafa;
 }
 #chat li .message strong {
-  color: #242939;
+  color: #fafafa;
 }
 #chat li .message p {
   font-size: 14px;
@@ -59,4 +62,17 @@ body {
   width: 16px;
   opacity: 0.5;
   cursor: pointer;
+}
+#chat li.me {
+  background-color: #FDF5E6;
+  flex-direction: row-reverse;
+}
+#chat li.me .message {
+  background-color: green;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  color: #fff;
+}
+#chat li.me .message strong {
+  display: none;
 }

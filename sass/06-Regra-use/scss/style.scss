@@ -1,3 +1,4 @@
+/*the scss @use rule allows import and manipulation to organize variables*/
 @use "corners" as c;
 
 $color-first: red; /*variable global*/
