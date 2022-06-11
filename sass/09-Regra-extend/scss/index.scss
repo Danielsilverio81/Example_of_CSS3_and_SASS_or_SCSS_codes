@@ -1,0 +1,12 @@
+/*@extend is used to group and organize selectors according to the BEM methodology*/
+
+.error {
+    background-color: rgb(219, 127, 127);
+    border: 1px solid #f00;
+    margin: 10px;
+    padding: 10px;
+    &--serious {
+        @extend .error;
+        border-width: 3px;
+    }
+}
