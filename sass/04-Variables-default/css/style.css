@@ -1,5 +1,5 @@
 @use "theme" with(
-  $colorfirst: red,
+  $colorfirst: #f00,
   $colorhover: #015559,
   $radius: 10px
-)
+);
