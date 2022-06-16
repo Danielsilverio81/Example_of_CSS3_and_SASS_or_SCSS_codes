@@ -1,0 +1,6 @@
+/*if and else makes a conditional control using false and true to say when the property will be activated or not*/
+.photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
